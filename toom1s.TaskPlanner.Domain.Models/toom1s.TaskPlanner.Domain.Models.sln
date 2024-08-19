@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "toom1s.TaskPlanner.Domain.Models", "toom1s.TaskPlanner.Domain.Models\toom1s.TaskPlanner.Domain.Models.csproj", "{35C3C833-DF15-402C-8188-6A8C483BC75D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "toom1s.TaskPlanner.Domain.Logic", "toom1s.TaskPlanner.Domain.Logic\toom1s.TaskPlanner.Domain.Logic.csproj", "{72194844-97EB-4519-AD16-7A3C745DEF2E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35C3C833-DF15-402C-8188-6A8C483BC75D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35C3C833-DF15-402C-8188-6A8C483BC75D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35C3C833-DF15-402C-8188-6A8C483BC75D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35C3C833-DF15-402C-8188-6A8C483BC75D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72194844-97EB-4519-AD16-7A3C745DEF2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72194844-97EB-4519-AD16-7A3C745DEF2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72194844-97EB-4519-AD16-7A3C745DEF2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72194844-97EB-4519-AD16-7A3C745DEF2E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AA843B56-AE1A-4A6D-AB47-2A209814E3A0}
+	EndGlobalSection
+EndGlobal
