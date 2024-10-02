@@ -3,11 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "toom1sTaskPlanner.ConsoleRunner", "toom1sTaskPlanner.ConsoleRunner\toom1sTaskPlanner.ConsoleRunner.csproj", "{C10E2EDA-832D-436B-AB4D-47496391330C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "toom1sTaskPlanner.ConsoleRunner", "toom1sTaskPlanner.ConsoleRunner\toom1sTaskPlanner.ConsoleRunner.csproj", "{C10E2EDA-832D-436B-AB4D-47496391330C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "toom1s.TaskPlanner.Domain.Logic", "..\toom1s.TaskPlanner.Domain.Models\toom1s.TaskPlanner.Domain.Logic\toom1s.TaskPlanner.Domain.Logic.csproj", "{7F16DD24-7DFA-43CB-AB30-5DA7F6A2AE7D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "toom1s.TaskPlanner.Domain.Models", "..\toom1s.TaskPlanner.Domain.Models\toom1s.TaskPlanner.Domain.Models\toom1s.TaskPlanner.Domain.Models.csproj", "{101D5726-1392-4848-873C-2E4F2C49A62B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "toom1s.TaskPlanner.DataAccess.Abstractions", "toom1s.TaskPlanner.DataAccess.Abstractions\toom1s.TaskPlanner.DataAccess.Abstractions.csproj", "{AC01D515-BC5E-4F81-B4E4-7C8721D15472}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "toom1s.TaskPlanner.DataAccess", "toom1s.TaskPlanner.DataAccess\toom1s.TaskPlanner.DataAccess.csproj", "{76385B28-CACC-411C-BA72-9249001D62A0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccess", "DataAccess", "{B81A29D5-6A7F-4AAB-B1A3-98AD4D060CA9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{DCC60AF7-19EC-42FB-A898-F0FDC7148B79}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{3EE7A2B5-3038-48E0-BC31-7B6F46E56769}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "toom1s.TaskPlanner.Domain.Logic.Tests", "toom1s.TaskPlanner.Domain.Logic.Tests\toom1s.TaskPlanner.Domain.Logic.Tests.csproj", "{D42C783E-6B5B-49E0-8061-DB36FA1A317D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,9 +39,28 @@ Global
 		{101D5726-1392-4848-873C-2E4F2C49A62B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{101D5726-1392-4848-873C-2E4F2C49A62B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{101D5726-1392-4848-873C-2E4F2C49A62B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC01D515-BC5E-4F81-B4E4-7C8721D15472}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC01D515-BC5E-4F81-B4E4-7C8721D15472}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC01D515-BC5E-4F81-B4E4-7C8721D15472}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC01D515-BC5E-4F81-B4E4-7C8721D15472}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76385B28-CACC-411C-BA72-9249001D62A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76385B28-CACC-411C-BA72-9249001D62A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76385B28-CACC-411C-BA72-9249001D62A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76385B28-CACC-411C-BA72-9249001D62A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D42C783E-6B5B-49E0-8061-DB36FA1A317D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D42C783E-6B5B-49E0-8061-DB36FA1A317D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D42C783E-6B5B-49E0-8061-DB36FA1A317D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D42C783E-6B5B-49E0-8061-DB36FA1A317D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C10E2EDA-832D-436B-AB4D-47496391330C} = {3EE7A2B5-3038-48E0-BC31-7B6F46E56769}
+		{7F16DD24-7DFA-43CB-AB30-5DA7F6A2AE7D} = {DCC60AF7-19EC-42FB-A898-F0FDC7148B79}
+		{101D5726-1392-4848-873C-2E4F2C49A62B} = {DCC60AF7-19EC-42FB-A898-F0FDC7148B79}
+		{AC01D515-BC5E-4F81-B4E4-7C8721D15472} = {B81A29D5-6A7F-4AAB-B1A3-98AD4D060CA9}
+		{76385B28-CACC-411C-BA72-9249001D62A0} = {B81A29D5-6A7F-4AAB-B1A3-98AD4D060CA9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8388F58C-0623-4C31-8A52-80C8DE70255C}
